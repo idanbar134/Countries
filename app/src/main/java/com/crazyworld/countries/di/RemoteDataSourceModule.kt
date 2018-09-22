@@ -1,6 +1,6 @@
 package com.crazyworld.countries.di
 
-import com.crazyworld.countries.data.remote.RemoteDataSource
+import com.crazyworld.countries.data.remote.source.RemoteDataSource
 import com.crazyworld.countries.di.RemoteProperties.BASE_URL
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

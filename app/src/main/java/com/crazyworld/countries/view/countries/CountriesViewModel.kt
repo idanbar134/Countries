@@ -8,7 +8,6 @@ import com.crazyworld.countries.common.with
 import com.crazyworld.countries.data.remote.CountriesResponse
 
 sealed class CountriesState
-
 data class DataReady(val render : List<CountriesRender>) : CountriesState()
 
 class CountriesViewModel(private val repository: CountriesRepository,
@@ -16,9 +15,7 @@ class CountriesViewModel(private val repository: CountriesRepository,
 
     val state = MutableLiveData<CountriesState>()
 
-    init {
-        getCountries()
-    }
+    init { getCountries()  }
 
     private fun getCountries() = launch {
         repository.getAllCountries()

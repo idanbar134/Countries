@@ -1,7 +1,7 @@
 package com.crazyworld.countries.view.countries
 
 import com.crazyworld.countries.data.remote.CountriesResponse
-import com.crazyworld.countries.data.remote.RemoteDataSource
+import com.crazyworld.countries.data.remote.source.RemoteDataSource
 import io.reactivex.Single
 
 interface CountriesRepository {
