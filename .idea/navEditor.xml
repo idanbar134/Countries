@@ -19,7 +19,7 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_countriesFragment_to_detailsFragment">
+                            <entry key="action_countries_to_details">
                               <value>
                                 <LayoutPositions />
                               </value>

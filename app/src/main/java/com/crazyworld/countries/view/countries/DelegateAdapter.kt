@@ -34,6 +34,8 @@ class DelegateCountryAdapter(var onClick: (CountriesRender) -> Unit) : ViewTypeD
     }
 }
 
+
+
 object CountryItemType {
     const val ItemType = 0
 }
