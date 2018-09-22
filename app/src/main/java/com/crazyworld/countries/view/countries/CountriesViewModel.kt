@@ -8,7 +8,7 @@ import com.crazyworld.countries.common.with
 import com.crazyworld.countries.data.remote.CountriesResponse
 
 sealed class CountriesState
-data class DataReady(val render : List<CountriesRender>) : CountriesState()
+data class DataReady(val data : List<CountriesRender>) : CountriesState()
 
 class CountriesViewModel(private val repository: CountriesRepository,
                          private val provider: SchedulerProvider) : AbstractViewModel() {

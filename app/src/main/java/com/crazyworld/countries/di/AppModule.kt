@@ -2,6 +2,7 @@ package com.crazyworld.countries.di
 
 import com.crazyworld.countries.common.ApplicationSchedulerProvider
 import com.crazyworld.countries.common.SchedulerProvider
+import com.crazyworld.countries.view.countries.DelegateAdapter
 import com.crazyworld.countries.view.countries.CountriesRepository
 import com.crazyworld.countries.view.countries.CountriesRepositoryImpl
 import com.crazyworld.countries.view.countries.CountriesViewModel
@@ -11,6 +12,7 @@ import org.koin.dsl.module.module
 val countriesModule = module {
     viewModel { CountriesViewModel(get(), get()) }
     single { CountriesRepositoryImpl(get()) as CountriesRepository }
+    single { DelegateAdapter() }
 }
 
 val listModule = module {

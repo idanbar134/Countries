@@ -1,13 +1,22 @@
 package com.crazyworld.countries.view.detail
 
+import android.os.Bundle
+import com.crazyworld.countries.R
 import com.crazyworld.countries.common.BaseFragment
+import com.crazyworld.countries.common.Constants
+import com.crazyworld.countries.view.countries.CountriesRender
 
 class DetailsFragment : BaseFragment() {
-    override fun render() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+    private val country by lazy {
+        arguments?.getParcelable<CountriesRender>(Constants.BUNDLE_COUNTRY)
     }
 
-    override fun resource(): Int {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+
+    override fun render() {
+
     }
+
+    override fun resource(): Int = R.layout.detail_fragment
 }
