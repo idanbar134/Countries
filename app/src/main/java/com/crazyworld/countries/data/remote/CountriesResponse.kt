@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName
 data class CountriesResponse(val name: String? = null,
                              val capital: String? = null,
                              val region: String? = null,
-                             @SerializedName("latlng") val latLong: List<Double>? = null,
+                             @SerializedName("latlng") val latLong: List<Double> = arrayListOf(),
                              val languages: List<Languages>? = null,
                              val currencies: List<Currencies>? = null,
                              val flag: String? = null,

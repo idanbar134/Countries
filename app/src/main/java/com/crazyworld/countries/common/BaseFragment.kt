@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import io.reactivex.disposables.CompositeDisposable
 
+
 abstract class BaseFragment : Fragment() {
 
     var dispose : CompositeDisposable? = null

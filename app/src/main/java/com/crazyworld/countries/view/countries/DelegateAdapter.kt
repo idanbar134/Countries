@@ -25,16 +25,12 @@ class DelegateCountryAdapter(var onClick: (CountriesRender) -> Unit) : ViewTypeD
 
             RxView.clicks(this)
                     .throttleFirst(300, TimeUnit.MILLISECONDS)
-                    .subscribe {
-                        onClick.invoke(country)
-                    }
+                    .subscribe { onClick.invoke(country) }
             backgroundFlag.load(country.flag ?: "")
 
         }
     }
 }
-
-
 
 object CountryItemType {
     const val ItemType = 0
